@@ -78,6 +78,7 @@ def train_model(config):
             strategy = tf.distribute.MirroredStrategy()
             with strategy.scope():
                 model = get_model(input_shape, attack_point, config)
+                print(input_shape, attack_point, config)
                 print(model)
 
                 # model recording setup
