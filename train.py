@@ -78,9 +78,11 @@ def train_model(config):
             strategy = tf.distribute.MirroredStrategy()
             with strategy.scope():
                 model = get_model(input_shape, attack_point, config)
+                print(model)
 
                 # model recording setup
                 stub = get_model_stub(attack_point, attack_byte, config)
+                print(stub)
                 cb = [
                     ModelCheckpoint(monitor="val_loss",
                                     filepath=f"models/{stub}",
