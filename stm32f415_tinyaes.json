@@ -4,16 +4,16 @@
     "algorithm": "tinyaes",
     "version": "10",
     "attack_points": [
-        "sub_bytes_out"
+        "key"
     ],
     "attack_bytes": [
         "0"
     ],
     "max_trace_len": 20000,
-    "num_shards": 10,
-    "num_traces_per_shard": 10,
+    "num_shards": 256,
+    "num_traces_per_shard": 256,
     "batch_size": 32,
-    "epochs": 10,
+    "epochs": 30,
     "optimizer_parameters": {
         "lr": 0.001,
         "multi_gpu_lr": 0.001
