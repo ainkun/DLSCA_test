@@ -13,7 +13,7 @@
     ],
     "max_trace_len": 20000,
     "num_shards": 10,
-    "num_traces_per_shard": 256,
+    "num_traces_per_shard": 10,
     "batch_size": 32,
     "epochs": 10,
     "optimizer_parameters": {
