@@ -4,9 +4,7 @@
     "algorithm": "tinyaes",
     "version": "10",
     "attack_points": [
-        "sub_bytes_out",
-        "sub_bytes_in",
-        "key"
+        "sub_bytes_out"
     ],
     "attack_bytes": [
         "0"
